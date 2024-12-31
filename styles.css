@@ -17,12 +17,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-section {
+.media-section {
     flex: 2;
+    max-width: 70%; /* Giới hạn kích thước của video */
+    max-height: 100%; /* Giới hạn chiều cao của video */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.image-section img {
+.media-section video {
     width: 100%;
     height: 100%;
     object-fit: cover;
